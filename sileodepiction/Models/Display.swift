@@ -16,7 +16,7 @@ struct Display: Codable {
 extension Display {
     struct Contact: Codable {
         let twitter: String
-        let discord: String
+        let email: String
     }
 
     struct Information: Codable {

@@ -82,18 +82,28 @@ private extension NativeDepictionCreator.TabBuilder {
                     title: "Version"
                 ),
                 .init(
-                    depictionClass: .depictionTableTextView,
-                    text: "Free",
-                    title: "Price"
-                ),
-                .init(
-                    depictionClass: .depictionTableTextView,
-                    text: control.author,
-                    title: "Developer"
+                    depictionClass: .depictionTableButtonView,
+                    action: "https://twitter.com/\(display.contact.twitter)",
+                    title: "Twitter"
                 ),
                 .init(
                     depictionClass: .depictionTableButtonView,
-                    action: "https://ginsu.dev/repo/depictions/index.html?packageId=\(control.packageName)",
+                    action: "mailto:\(display.contact.email)?subject=\(control.name)",
+                    title: "Email"
+                ),
+                //.init(
+                //    depictionClass: .depictionTableTextView,
+                //    text: "Free",
+                //    title: "Price"
+                //),
+                //.init(
+                //    depictionClass: .depictionTableTextView,
+                //   text: control.author,
+                //    title: "Developer"
+                //),
+                .init(
+                    depictionClass: .depictionTableButtonView,
+                    action: "https://p2kdev.github.io/repo/depictions/index.html?packageId=\(control.packageName)",
                     title: "View web depiction"
                 )
             ]
@@ -124,8 +134,8 @@ private extension NativeDepictionCreator.TabBuilder {
             views: [
                 .init(
                     depictionClass: .depictionTableButtonView,
-                    action: display.contact.discord,
-                    title: "Discord"
+                    action: "mailto:\(display.contact.email)",
+                    title: "Email"
                 ),
                 .init(
                     depictionClass: .depictionTableButtonView,

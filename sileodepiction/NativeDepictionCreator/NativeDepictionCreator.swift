@@ -55,7 +55,7 @@ private extension NativeDepictionCreator {
             tabs: [
                 TabBuilder.tab(.details(display: display, control: control, screenshots: screenshots)),
                 TabBuilder.tab(.changes(display: display)),
-                TabBuilder.tab(.contact(display: display, control: control))
+                //TabBuilder.tab(.contact(display: display, control: control))
             ]
         )
     }
